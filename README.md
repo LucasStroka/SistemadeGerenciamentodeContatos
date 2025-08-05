@@ -2,7 +2,7 @@
 Nome: Lucas Renan Stroka
 
 
-INDEX.JS
+index.js
 
 index.js possui a função principal( mainMenu() ) a qual solicita o serviço das funções que fazem parte do esqueleto do codigo.
 
@@ -23,7 +23,7 @@ Switch/case é a função que utilizei para selecionar qual função devera ser 
 No (case 5:) possui a saida do loop alterando o valor da cond para false.
 
 
-./DATA/CONTACTS.JS
+./data/contacts.js
 
 O array [const contatos] que foi declarado no arquivo esta com algumas informações dentro de contatos como nome, telefone, email
 
@@ -44,18 +44,23 @@ Cria a Função askQuestion() Esta função recebe uma string (query) que será 
 
 Exporta a Função para os demais arquivos.
 
-./Utils/editarContato.js //TODO/ Refazer
+./Utils/editarContato.js
 
 É instanciado as seguintes function`s askQuestion, listContato e o array contratos.
 
-É uma função asincrona, que primeiramente limpa o console e exibe a lista de contato
-apos isso é solitado o id do contato que
+Este código define uma função assíncrona chamada editarContato, que limpa o 
+console, exibe uma lista de contatos e permite editar nome, telefone e e-mail 
+de um contato selecionado pelo ID. Para cada campo, o usuário decide se 
+deseja alterá-lo; se não, o valor atual é mantido. Os dados atualizados são 
+salvos no array contatos, substituindo o objeto correspondente ao ID 
+informado. A função usa askQuestion para entrada do usuário
+
+Por ultimo é alterado o indice do array solicitado.
 
 ./Utils/listContato.js
 É instanciado o array contatos
 
-Uma função que começa limpando o console e que printa o array contatos por meio de
-forEach
+Uma função que começa limpando o console e que printa o array contatos por meio de um forEach
 
 ./Utils/removerContato
 
