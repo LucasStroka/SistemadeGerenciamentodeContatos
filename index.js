@@ -1,5 +1,3 @@
-const prompt = require("prompt-sync")();
-const contatos = require("./data/contacts");
 const addContato = require("./Utils/addContato")
 const editarContato = require("./Utils/editarContato")
 const removerContato = require("./Utils/removerContato")
@@ -26,7 +24,7 @@ async function mainMenu() {
             case 3: await editarContato(); break;
             case 4: await removerContato(); break;
             case 5: 
-                cond = !true;
+                cond = false;
                 console.log("Saindo...");
                 break;
             default:
